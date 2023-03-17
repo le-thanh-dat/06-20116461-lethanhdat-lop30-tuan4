@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .b11 {
+            margin: 10% 0px 0px 10% ;
+            background-color: aqua;
+            width: 80%;
+            height: 600px;
+            position: relative;
+
+        }
+        .b11 span {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            /*background-color: rgb(43, 255, 0);*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .b11 span::before{
+            content: 'best sheller 2023';
+            background-color: rgb(121, 37, 37);
+            width: 150%;
+            height: 50px;
+            position: absolute;
+            transform: rotate(-45deg) translateY(-27px);
+            font-weight: 700;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+        }
+        .b11 span:hover{
+            animation-name: b11;
+            animation-duration: 5s;
+
+        }
+        @keyframes b11{
+            0%{background-color: black;}
+            25%{background-color: blue;}
+            50%{background-color: blueviolet;}
+            75%{background-color: brown;}
+            100%{background-color:yellowgreen;}
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="b11">
+        <span></span>
+    </div>
+</body>
+</html>

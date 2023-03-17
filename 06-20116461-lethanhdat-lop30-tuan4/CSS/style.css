@@ -1,0 +1,389 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#bai9{
+    position: relative;
+    border: 1px solid black;
+    width: 820px;
+    height: 300px;
+    background-color: aliceblue;
+    padding-top: 100px;
+}
+#bai9 img{
+    height: 100px;
+    width: 200px;
+    float: left;
+    border: 1px solid red;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+#bai9 img:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(24, 22, 22);
+}
+#bai10 {
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
+#bai10 div{
+    width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: bai10;
+  animation-duration: 4s;
+}
+/* #bai10 div:hover{ 
+    border: 1px solid black;
+    transform: rotate(45deg);
+    animation-name: bai10;
+    animation-duration: 4s;
+    animation-delay: 4s 
+    
+    
+} */
+@keyframes bai10 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px; width: 400px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.bai11{
+    width: 900px;
+    margin-left: 10px;
+    min-height: 400px;
+    background-color: aquamarine;
+    position: relative;
+    
+}
+.bai11 span{
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.bai11 span::before{
+    content: 'best sheller 2015';
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    transform: rotate(-45deg) translateY(-30px);
+    position: absolute;
+    border: 2px solid red;
+    font-weight: 700;
+    color: aliceblue;
+    display: flex;
+    align-items: center; /*dinh dạng center dọc */
+    justify-content: center;/*dinh dạng center ngang*/
+    animation-name: bai11;
+    animation-duration: 4s;
+    
+
+    
+}
+@keyframes bai11{
+    0%{color: aqua;}
+    50%{color: rgb(24, 22, 22);}
+    100%{color: chartreuse;}
+}
+.bai11 b {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 8px rgb(243, 10, 10) ;
+    
+}
+.bai11 p{
+    font-size: 20px;
+    text-indent: 100px;
+    margin-top: 100px;
+}
+.bai12 {
+    background-color: aqua;
+    width: 800px;
+    height: 400px;
+    margin-left: 20px;
+    position: relative;
+}
+.bai12 p {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    width: 800px;
+    background-color: green;
+    color: black;
+    overflow: hidden;
+    
+}
+.bai13 {
+    background-color: blanchedalmond;
+    width: 1000px;
+    height: 300px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bai13 div {
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bai13 div img {
+    width: 150px;
+    height: 150px;
+}
+.bai13 div p {
+    width: 100%;
+    height: 20px;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+
+}
+.bai13 div .h1:hover{
+    width: 200px;
+    height: 200px;
+}
+.bai13 div .h2:hover{
+    width: 250px;
+    height: 250px;
+}
+.bai13 div .h3:hover{
+    width: 300px;
+    height: 300px;
+}
+.bai13 div .h4:hover{
+    width: 350px;
+    height: 350px;
+}
+
+.bai14 {
+    background-color: greenyellow;
+    width: 500px;
+    height: 300px;
+    border-radius: 10%;
+    border-width: 3px ;
+    border-style: dashed;
+    text-indent: 20px;
+    padding-top: 20px;
+    color: rgb(236, 84, 13);
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bai14:hover{
+    margin-left: 300px;
+    transform: rotate(45deg);
+    border-color: blue;
+    border-style: dashed;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+}
+.bai15 {
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+}
+.bai15 input {
+    margin: 10px;
+    background-color: green;
+    width: 300px;
+    
+}
+@keyframes bai15 {
+    0%{background-color: aqua;}
+    25%{background-color: black;}
+    50%{background-color: brown;}
+    75%{background-color: aliceblue;}
+    100%{background-color: darkblue;}
+}
+/* .bai15 input:hover{
+    width: 100px;
+    background-color: red;
+    animation-name: bai15;
+    animation-duration: 5s;
+    
+} */
+.bai15 input[type=text]:focus{
+    width: 150px;
+    background-color: chartreuse;
+}
+.bai16 {
+    width: 800px;
+    height: 300px;
+    background-color: cornflowerblue;
+    padding-top: 40px;
+}
+
+.bai16 ul li{
+    
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 20%;
+    border: 2px dashed white;
+    box-shadow: 0 0 0 4px red,4px 2px 6px 4px white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bai16 ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+}
+.bai17{
+    background-color: rgb(219, 213, 213);
+    width: 800px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bai17 ul li {
+    float: left;
+    list-style: none;
+    background-color: brown;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.bai17 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bai18 {
+    width: 800px;
+    height: 400px;
+    background-color: antiquewhite;
+    
+    
+}
+.bai18 > ul > li{
+    background-color: green;
+    float: left;
+    width: 100px;
+    height: 50px;
+    list-style: none;
+    text-indent: 10px;
+    line-height: 50px; /*căn giữa dọc */
+    
+}
+.bai18 > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.bai18ul{
+    background-color: aqua;
+    display: none;
+}
+ul.bai18ul > li{
+    
+    background-color: green;
+    list-style: none;
+}
+ul.bai18ul > li > a{
+    
+    text-decoration: none;
+    color: aliceblue;
+}
+.bai18 > ul :hover{
+    
+    color: red;
+}
+.bai18 > ul :hover .bai18ul{
+    display: block;
+    background-color: rgb(255, 251, 0);
+    color: red;
+}
+.bai19{
+    background-color: antiquewhite;
+    width: 800px;
+    height: 400px;
+
+}
+
+ul.menu{
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color: rgb(236, 241, 241);
+}
+ul.menu > li{
+    width: 157px;
+    height: 50px;
+    float: left;
+    border: 1px solid white;
+    background-color:black;
+    line-height: 50px;
+    list-style: none;
+}
+ul.menu > li > a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+   
+}
+.submenu{
+    display: none;
+}
+ul.submenu >li{
+    
+    width: 318px;
+    list-style: none;
+    background-color: aliceblue;
+    text-indent: 10px;
+}
+ul.submenu > li >a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+ul.menu :hover {
+    display: block;
+    background-color: greenyellow; 
+}
+ul.menu :hover .submenu{
+    display: block;
+    background-color: greenyellow; 
+}
+
+ul.submenu :hover{
+    background-color: green;
+} 
+
+
+
+
